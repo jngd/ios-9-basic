@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="T7E4JuanGarcia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ams.png" translatesAutoresizingMaskIntoConstraints="NO" id="PRA-nd-1gE">
+                                <rect key="frame" x="142" y="177" width="317" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="PyY-Ug-yXA"/>
+                                    <constraint firstAttribute="height" constant="245" id="oWl-A6-nl1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valoracion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYo-Rn-fC7">
+                                <rect key="frame" x="267" y="430" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="5 estrellas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-k0-3HN">
+                                <rect key="frame" x="267" y="459" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i0-HM-Pdw">
+                                <rect key="frame" x="278" y="130" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YYo-Rn-fC7" secondAttribute="centerX" constant="-7" id="3AQ-bD-hF3"/>
+                            <constraint firstAttribute="centerX" secondItem="1i0-HM-Pdw" secondAttribute="centerX" constant="-6.5" id="4Ar-XL-gMx"/>
+                            <constraint firstItem="PRA-nd-1gE" firstAttribute="top" secondItem="1i0-HM-Pdw" secondAttribute="bottom" constant="26" id="5cN-Gi-O1C"/>
+                            <constraint firstItem="YYo-Rn-fC7" firstAttribute="top" secondItem="PRA-nd-1gE" secondAttribute="bottom" constant="8" id="BC5-AM-kfJ"/>
+                            <constraint firstAttribute="centerY" secondItem="PRA-nd-1gE" secondAttribute="centerY" constant="0.5" id="ELR-S4-5f3"/>
+                            <constraint firstItem="ADl-k0-3HN" firstAttribute="top" secondItem="YYo-Rn-fC7" secondAttribute="bottom" constant="8" id="EYm-ts-SeD"/>
+                            <constraint firstAttribute="centerX" secondItem="PRA-nd-1gE" secondAttribute="centerX" constant="-0.5" id="Ul9-Yd-esq"/>
+                            <constraint firstAttribute="centerX" secondItem="ADl-k0-3HN" secondAttribute="centerX" constant="-6" id="a97-Si-OBT"/>
+                            <constraint firstItem="1i0-HM-Pdw" firstAttribute="top" secondItem="PRA-nd-1gE" secondAttribute="bottom" constant="8" id="eND-6Q-TkW"/>
+                            <constraint firstAttribute="centerX" secondItem="1i0-HM-Pdw" secondAttribute="centerX" constant="-0.5" id="geV-2x-8it"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eND-6Q-TkW"/>
+                                <exclude reference="geV-2x-8it"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="YYo-Rn-fC7"/>
+                                <exclude reference="ADl-k0-3HN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5cN-Gi-O1C"/>
+                                <exclude reference="4Ar-XL-gMx"/>
+                                <include reference="eND-6Q-TkW"/>
+                                <include reference="geV-2x-8it"/>
+                                <exclude reference="3AQ-bD-hF3"/>
+                                <exclude reference="BC5-AM-kfJ"/>
+                                <exclude reference="EYm-ts-SeD"/>
+                                <exclude reference="a97-Si-OBT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ams.png" width="457" height="306"/>
+    </resources>
+</document>
