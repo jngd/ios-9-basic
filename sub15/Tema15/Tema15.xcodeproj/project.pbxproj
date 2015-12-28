@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5D973D81C309ECF00321FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D973D71C309ECF00321FDB /* AppDelegate.swift */; };
+		C5D973DA1C309ECF00321FDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D973D91C309ECF00321FDB /* ViewController.swift */; };
+		C5D973DD1C309ECF00321FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D973DB1C309ECF00321FDB /* Main.storyboard */; };
+		C5D973E01C309ECF00321FDB /* Tema15.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5D973DE1C309ECF00321FDB /* Tema15.xcdatamodeld */; };
+		C5D973E21C309ECF00321FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D973E11C309ECF00321FDB /* Assets.xcassets */; };
+		C5D973E51C309ECF00321FDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D973E31C309ECF00321FDB /* LaunchScreen.storyboard */; };
+		C5D973F01C309ED000321FDB /* Tema15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D973EF1C309ED000321FDB /* Tema15Tests.swift */; };
+		C5D973FB1C309ED000321FDB /* Tema15UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D973FA1C309ED000321FDB /* Tema15UITests.swift */; };
+		C5D974091C309EE400321FDB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D974081C309EE400321FDB /* CoreData.framework */; };
+		C5D9740C1C30AC1F00321FDB /* im1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C5D9740A1C30AC1F00321FDB /* im1.jpeg */; };
+		C5D9740D1C30AC1F00321FDB /* im2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C5D9740B1C30AC1F00321FDB /* im2.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5D973EC1C309ED000321FDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5D973CC1C309ECF00321FDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5D973D31C309ECF00321FDB;
+			remoteInfo = Tema15;
+		};
+		C5D973F71C309ED000321FDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5D973CC1C309ECF00321FDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5D973D31C309ECF00321FDB;
+			remoteInfo = Tema15;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5D973D41C309ECF00321FDB /* Tema15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tema15.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D973D71C309ECF00321FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5D973D91C309ECF00321FDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5D973DC1C309ECF00321FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5D973DF1C309ECF00321FDB /* Tema15.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tema15.xcdatamodel; sourceTree = "<group>"; };
+		C5D973E11C309ECF00321FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5D973E41C309ECF00321FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5D973E61C309ECF00321FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D973EB1C309ED000321FDB /* Tema15Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tema15Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D973EF1C309ED000321FDB /* Tema15Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema15Tests.swift; sourceTree = "<group>"; };
+		C5D973F11C309ED000321FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D973F61C309ED000321FDB /* Tema15UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tema15UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D973FA1C309ED000321FDB /* Tema15UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema15UITests.swift; sourceTree = "<group>"; };
+		C5D973FC1C309ED000321FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D974081C309EE400321FDB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C5D9740A1C30AC1F00321FDB /* im1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im1.jpeg; sourceTree = "<group>"; };
+		C5D9740B1C30AC1F00321FDB /* im2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im2.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5D973D11C309ECF00321FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D974091C309EE400321FDB /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D973E81C309ED000321FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D973F31C309ED000321FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5D973CB1C309ECF00321FDB = {
+			isa = PBXGroup;
+			children = (
+				C5D9740A1C30AC1F00321FDB /* im1.jpeg */,
+				C5D9740B1C30AC1F00321FDB /* im2.jpeg */,
+				C5D974081C309EE400321FDB /* CoreData.framework */,
+				C5D973D61C309ECF00321FDB /* Tema15 */,
+				C5D973EE1C309ED000321FDB /* Tema15Tests */,
+				C5D973F91C309ED000321FDB /* Tema15UITests */,
+				C5D973D51C309ECF00321FDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5D973D51C309ECF00321FDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5D973D41C309ECF00321FDB /* Tema15.app */,
+				C5D973EB1C309ED000321FDB /* Tema15Tests.xctest */,
+				C5D973F61C309ED000321FDB /* Tema15UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5D973D61C309ECF00321FDB /* Tema15 */ = {
+			isa = PBXGroup;
+			children = (
+				C5D973D71C309ECF00321FDB /* AppDelegate.swift */,
+				C5D973D91C309ECF00321FDB /* ViewController.swift */,
+				C5D973DB1C309ECF00321FDB /* Main.storyboard */,
+				C5D973E11C309ECF00321FDB /* Assets.xcassets */,
+				C5D973E31C309ECF00321FDB /* LaunchScreen.storyboard */,
+				C5D973E61C309ECF00321FDB /* Info.plist */,
+				C5D973DE1C309ECF00321FDB /* Tema15.xcdatamodeld */,
+			);
+			path = Tema15;
+			sourceTree = "<group>";
+		};
+		C5D973EE1C309ED000321FDB /* Tema15Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C5D973EF1C309ED000321FDB /* Tema15Tests.swift */,
+				C5D973F11C309ED000321FDB /* Info.plist */,
+			);
+			path = Tema15Tests;
+			sourceTree = "<group>";
+		};
+		C5D973F91C309ED000321FDB /* Tema15UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5D973FA1C309ED000321FDB /* Tema15UITests.swift */,
+				C5D973FC1C309ED000321FDB /* Info.plist */,
+			);
+			path = Tema15UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5D973D31C309ECF00321FDB /* Tema15 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D973FF1C309ED000321FDB /* Build configuration list for PBXNativeTarget "Tema15" */;
+			buildPhases = (
+				C5D973D01C309ECF00321FDB /* Sources */,
+				C5D973D11C309ECF00321FDB /* Frameworks */,
+				C5D973D21C309ECF00321FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tema15;
+			productName = Tema15;
+			productReference = C5D973D41C309ECF00321FDB /* Tema15.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5D973EA1C309ED000321FDB /* Tema15Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D974021C309ED000321FDB /* Build configuration list for PBXNativeTarget "Tema15Tests" */;
+			buildPhases = (
+				C5D973E71C309ED000321FDB /* Sources */,
+				C5D973E81C309ED000321FDB /* Frameworks */,
+				C5D973E91C309ED000321FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5D973ED1C309ED000321FDB /* PBXTargetDependency */,
+			);
+			name = Tema15Tests;
+			productName = Tema15Tests;
+			productReference = C5D973EB1C309ED000321FDB /* Tema15Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5D973F51C309ED000321FDB /* Tema15UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D974051C309ED000321FDB /* Build configuration list for PBXNativeTarget "Tema15UITests" */;
+			buildPhases = (
+				C5D973F21C309ED000321FDB /* Sources */,
+				C5D973F31C309ED000321FDB /* Frameworks */,
+				C5D973F41C309ED000321FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5D973F81C309ED000321FDB /* PBXTargetDependency */,
+			);
+			name = Tema15UITests;
+			productName = Tema15UITests;
+			productReference = C5D973F61C309ED000321FDB /* Tema15UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5D973CC1C309ECF00321FDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = jgd;
+				TargetAttributes = {
+					C5D973D31C309ECF00321FDB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MK6N6UHZRE;
+					};
+					C5D973EA1C309ED000321FDB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MK6N6UHZRE;
+						TestTargetID = C5D973D31C309ECF00321FDB;
+					};
+					C5D973F51C309ED000321FDB = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MK6N6UHZRE;
+						TestTargetID = C5D973D31C309ECF00321FDB;
+					};
+				};
+			};
+			buildConfigurationList = C5D973CF1C309ECF00321FDB /* Build configuration list for PBXProject "Tema15" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5D973CB1C309ECF00321FDB;
+			productRefGroup = C5D973D51C309ECF00321FDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5D973D31C309ECF00321FDB /* Tema15 */,
+				C5D973EA1C309ED000321FDB /* Tema15Tests */,
+				C5D973F51C309ED000321FDB /* Tema15UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5D973D21C309ECF00321FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D9740D1C30AC1F00321FDB /* im2.jpeg in Resources */,
+				C5D973E51C309ECF00321FDB /* LaunchScreen.storyboard in Resources */,
+				C5D973E21C309ECF00321FDB /* Assets.xcassets in Resources */,
+				C5D973DD1C309ECF00321FDB /* Main.storyboard in Resources */,
+				C5D9740C1C30AC1F00321FDB /* im1.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D973E91C309ED000321FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D973F41C309ED000321FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5D973D01C309ECF00321FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D973DA1C309ECF00321FDB /* ViewController.swift in Sources */,
+				C5D973E01C309ECF00321FDB /* Tema15.xcdatamodeld in Sources */,
+				C5D973D81C309ECF00321FDB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D973E71C309ED000321FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D973F01C309ED000321FDB /* Tema15Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5D973F21C309ED000321FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D973FB1C309ED000321FDB /* Tema15UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5D973ED1C309ED000321FDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5D973D31C309ECF00321FDB /* Tema15 */;
+			targetProxy = C5D973EC1C309ED000321FDB /* PBXContainerItemProxy */;
+		};
+		C5D973F81C309ED000321FDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5D973D31C309ECF00321FDB /* Tema15 */;
+			targetProxy = C5D973F71C309ED000321FDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5D973DB1C309ECF00321FDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5D973DC1C309ECF00321FDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5D973E31C309ECF00321FDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5D973E41C309ECF00321FDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5D973FD1C309ED000321FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5D973FE1C309ED000321FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5D974001C309ED000321FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tema15/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juangarcia.Tema15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5D974011C309ED000321FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tema15/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juangarcia.Tema15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5D974031C309ED000321FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tema15Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juangarcia.Tema15Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tema15.app/Tema15";
+			};
+			name = Debug;
+		};
+		C5D974041C309ED000321FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tema15Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juangarcia.Tema15Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tema15.app/Tema15";
+			};
+			name = Release;
+		};
+		C5D974061C309ED000321FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tema15UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juangarcia.Tema15UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tema15;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C5D974071C309ED000321FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tema15UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juangarcia.Tema15UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tema15;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5D973CF1C309ECF00321FDB /* Build configuration list for PBXProject "Tema15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D973FD1C309ED000321FDB /* Debug */,
+				C5D973FE1C309ED000321FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5D973FF1C309ED000321FDB /* Build configuration list for PBXNativeTarget "Tema15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D974001C309ED000321FDB /* Debug */,
+				C5D974011C309ED000321FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5D974021C309ED000321FDB /* Build configuration list for PBXNativeTarget "Tema15Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D974031C309ED000321FDB /* Debug */,
+				C5D974041C309ED000321FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5D974051C309ED000321FDB /* Build configuration list for PBXNativeTarget "Tema15UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D974061C309ED000321FDB /* Debug */,
+				C5D974071C309ED000321FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5D973DE1C309ECF00321FDB /* Tema15.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5D973DF1C309ECF00321FDB /* Tema15.xcdatamodel */,
+			);
+			currentVersion = C5D973DF1C309ECF00321FDB /* Tema15.xcdatamodel */;
+			path = Tema15.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C5D973CC1C309ECF00321FDB /* Project object */;
+}
