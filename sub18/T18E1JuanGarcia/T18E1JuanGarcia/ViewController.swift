@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
     animation.duration = 1.0
     image.layer.addAnimation(animation, forKey:"position")
+    
   }
   override func viewDidLoad() {
     super.viewDidLoad()

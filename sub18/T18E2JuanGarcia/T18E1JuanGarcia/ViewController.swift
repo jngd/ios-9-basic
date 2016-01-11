@@ -15,14 +15,19 @@ class ViewController: UIViewController {
   @IBOutlet weak var animateButton: UIButton!
   
   @IBAction func animateAction(sender: AnyObject) {
-    var animation: CABasicAnimation! = CABasicAnimation(keyPath: "position")
-    animation.toValue = NSValue(CGPoint:CGPointMake(160, 200))
-    var resizeAnimation: CABasicAnimation = CABasicAnimation(keyPath: "bounds.size")
-    resizeAnimation.toValue = NSValue(CGSize: CGSizeMake(240, 60))
     
-    image.layer.addAnimation(animation, forKey:"position")
-    image.layer.addAnimation(resizeAnimation, forKey: "bounds.size")
+    UIView.animateWithDuration(5.0, delay: 0.0, options: UIViewAnimationOptions.BeginFromCurrentState, animations:{
+      self.image.alpha = 0.0
+      self.image.alpha = 1.0
+      
+      self.image.frame = CGRect(x: 160, y: 200, width: self.image.frame.size.width, height: self.image.frame.size.height)
+      
+    }, completion: {(value: Bool) in
+      print("Animation finished")
+    })
+    
   }
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.

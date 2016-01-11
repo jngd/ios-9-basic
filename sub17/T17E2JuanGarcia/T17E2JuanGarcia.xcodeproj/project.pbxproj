@@ -15,6 +15,7 @@
 		C506C4201C31F74F0060D182 /* T17E2JuanGarciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506C41F1C31F74F0060D182 /* T17E2JuanGarciaTests.swift */; };
 		C506C42B1C31F74F0060D182 /* T17E2JuanGarciaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506C42A1C31F74F0060D182 /* T17E2JuanGarciaUITests.swift */; };
 		C506C4391C31F7650060D182 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C506C4381C31F7650060D182 /* Social.framework */; };
+		C51883D21C398A66000815C0 /* im1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C51883D11C398A66000815C0 /* im1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C506C42A1C31F74F0060D182 /* T17E2JuanGarciaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T17E2JuanGarciaUITests.swift; sourceTree = "<group>"; };
 		C506C42C1C31F74F0060D182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C506C4381C31F7650060D182 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C51883D11C398A66000815C0 /* im1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		C506C4091C31F74F0060D182 /* T17E2JuanGarcia */ = {
 			isa = PBXGroup;
 			children = (
+				C51883D11C398A66000815C0 /* im1.jpeg */,
 				C506C40A1C31F74F0060D182 /* AppDelegate.swift */,
 				C506C40C1C31F74F0060D182 /* ViewController.swift */,
 				C506C40E1C31F74F0060D182 /* Main.storyboard */,
@@ -239,6 +242,7 @@
 				C506C4151C31F74F0060D182 /* LaunchScreen.storyboard in Resources */,
 				C506C4121C31F74F0060D182 /* Assets.xcassets in Resources */,
 				C506C4101C31F74F0060D182 /* Main.storyboard in Resources */,
+				C51883D21C398A66000815C0 /* im1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +493,7 @@
 				C506C4311C31F74F0060D182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C506C4321C31F74F0060D182 /* Build configuration list for PBXNativeTarget "T17E2JuanGarciaTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +502,7 @@
 				C506C4341C31F74F0060D182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C506C4351C31F74F0060D182 /* Build configuration list for PBXNativeTarget "T17E2JuanGarciaUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +511,7 @@
 				C506C4371C31F74F0060D182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -22,6 +22,7 @@ class ViewController: UIViewController {
   @IBAction func msgTwitter(sender: AnyObject) {
     var twitterController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
     twitterController.setInitialText("")
+    twitterController.addImage(UIImage(named: "im1.jpeg"))
     var completionHandler = {(result:SLComposeViewControllerResult) -> () in
       twitterController.dismissViewControllerAnimated(true, completion: nil)
       switch result {
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
   @IBAction func msgFB(sender: AnyObject) {
     var fbController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
     fbController.setInitialText("")
+    fbController.addURL(NSURL(string: "https://www.google.es"))
     var completionHandler = {(result:SLComposeViewControllerResult) -> () in
       fbController.dismissViewControllerAnimated(true, completion: nil)
       switch result {

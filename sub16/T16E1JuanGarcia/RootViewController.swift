@@ -17,7 +17,7 @@ class RootViewController: UITableViewController, NSURLConnectionDelegate, NSXMLP
     var xmlData: NSMutableData? = nil
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

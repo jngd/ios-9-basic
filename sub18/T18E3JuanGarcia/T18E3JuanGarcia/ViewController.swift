@@ -16,7 +16,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var attachmentButton: UIButton!
   
   var animator = UIDynamicAnimator()
-  
+  var attachmentBehavior : UIAttachmentBehavior? = nil
+ 
   @IBAction func gravityAction(sender: AnyObject) {
     animator.removeAllBehaviors()
     var gravity = UIGravityBehavior(items: [self.gravityButton, self.pushButton, self.attachmentButton])
@@ -24,10 +25,22 @@ class ViewController: UIViewController {
   
   }
   
-  
-  @IBOutlet weak var pushAction: UIButton!
+  @IBAction func pushAction(sender: AnyObject) {
+    animator.removeAllBehaviors()
+    var push = UIPushBehavior(items: [self.gravityButton, self.pushButton, self.attachmentButton], mode: UIPushBehaviorMode.Instantaneous)
+    push.magnitude = 2
+    animator.addBehavior(push)
+  }
   
   @IBAction func attachmentAction(sender: AnyObject) {
+    animator.removeAllBehaviors()
+    var anchorPoint = CGPointMake(self.attachmentButton.center.x, self.attachmentButton.center.y)
+    attachmentBehavior = UIAttachmentBehavior(item: self.attachmentButton, attachedToAnchor: anchorPoint)
+    attachmentBehavior!.frequency = 0.5
+    attachmentBehavior!.damping = 2
+    attachmentBehavior!.length = 20
+    
+    animator.addBehavior(attachmentBehavior!)
   }
   
   

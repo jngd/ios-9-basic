@@ -32,11 +32,59 @@ class ViewController: UIViewController {
       }
     }
     
+    // Ampliación 1
+    let startDate : NSDate = NSDate(dateString: "2013-01-01")
+    let endDate : NSDate = NSDate(dateString: "2013-01-02")
+    let predicate : NSPredicate = store.predicateForEventsWithStartDate(startDate, endDate: endDate, calendars: nil)
+    
+    let eventsToRemove : NSArray = store.eventsMatchingPredicate(predicate)
+    
+    if eventsToRemove.count == 0 {
+      print ("Any events to remove")
+    } else {
+      for i in eventsToRemove {
+        do{
+          try store.removeEvent(i as! EKEvent, span: EKSpan.ThisEvent)
+        } catch _ {
+          print("Error removing events")
+        }
+      }
+    }
+    
+    // Ampliacion 2
+    let startDateToAddAlarm : NSDate = NSDate(dateString: "2015-01-01")
+    let endDateToAddAlarm : NSDate = NSDate(dateString: "2016-01-1")
+    let predicateToAddAlarm : NSPredicate = store.predicateForEventsWithStartDate(startDateToAddAlarm, endDate: endDateToAddAlarm, calendars: nil)
+    
+    let eventsToAddAlarm : NSArray = store.eventsMatchingPredicate(predicateToAddAlarm)
+    var alarm:EKAlarm = EKAlarm(relativeOffset: -60)
+
+    if eventsToRemove.count == 0 {
+      print ("Any events to add alarm")
+    } else {
+      for i in eventsToAddAlarm {
+        (i as! EKEvent).addAlarm(alarm)
+      }
+    }
+    
+    
     var controller = EKEventEditViewController()
     controller.eventStore = store
     self.presentViewController(controller, animated: true, completion: nil)
     
 
+  }
+}
+
+extension NSDate
+{
+  convenience
+  init(dateString:String) {
+    let dateStringFormatter = NSDateFormatter()
+    dateStringFormatter.dateFormat = "yyyy-MM-dd"
+    dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+    let d = dateStringFormatter.dateFromString(dateString)!
+    self.init(timeInterval:0, sinceDate:d)
   }
 }
 
