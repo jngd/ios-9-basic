@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wu-Aa-Cxr">
-                                <rect key="frame" x="143" y="247" width="35" height="30"/>
-                                <state key="normal" title="Push"/>
-                                <connections>
-                                    <action selector="pushAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9g-a1-gaU"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3x-EK-xKt">
                                 <rect key="frame" x="136" y="171" width="49" height="30"/>
                                 <state key="normal" title="Gravity"/>
@@ -38,14 +31,20 @@
                                     <action selector="attachmentAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ozj-N0-FIG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wu-Aa-Cxr">
+                                <rect key="frame" x="143" y="247" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <action selector="pushAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vrz-FT-qHC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="attachmentButton" destination="1Pf-5W-Z8g" id="iyC-IV-mGT"/>
                         <outlet property="gravityButton" destination="K3x-EK-xKt" id="Viq-FF-hnu"/>
-                        <outlet property="pushAction" destination="5wu-Aa-Cxr" id="8St-qM-Nrl"/>
-                        <outlet property="pushButton" destination="5wu-Aa-Cxr" id="d2d-an-1fH"/>
+                        <outlet property="pushButton" destination="5wu-Aa-Cxr" id="2D7-uC-etb"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="6gD-Rr-Y5I"/>
                     </connections>
                 </viewController>

@@ -17,7 +17,9 @@ class ViewController: UIViewController {
   
   var animator = UIDynamicAnimator()
   var attachmentBehavior : UIAttachmentBehavior? = nil
- 
+  var collision = UICollisionBehavior!()
+  
+  
   @IBAction func gravityAction(sender: AnyObject) {
     animator.removeAllBehaviors()
     var gravity = UIGravityBehavior(items: [self.gravityButton, self.pushButton, self.attachmentButton])
@@ -41,12 +43,26 @@ class ViewController: UIViewController {
     attachmentBehavior!.length = 20
     
     animator.addBehavior(attachmentBehavior!)
+    
   }
   
+  
+  @IBAction func handleAttachment(sender: UIPanGestureRecognizer) {
+    if(attachmentBehavior != nil){
+    attachmentBehavior!.anchorPoint = sender.locationInView(self.view)
+  
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     animator = UIDynamicAnimator(referenceView: self.view)
+      
+    collision = UICollisionBehavior(items: [pushButton!, gravityButton!, attachmentButton!])
+    collision.translatesReferenceBoundsIntoBoundary = true
+    collision.addBoundaryWithIdentifier("barrier", fromPoint: CGPointMake(self.view.frame.origin.x, 350), toPoint: CGPointMake(self.view.frame.origin.x + self.view.frame.width, 350))
+    animator.addBehavior(collision)
+      
   }
 
   override func viewDidAppear(animated: Bool) {
@@ -62,7 +78,7 @@ class ViewController: UIViewController {
     animator.addBehavior(snap1)
     animator.addBehavior(snap2)
     animator.addBehavior(snap3)
-    
+     
   }
   
   override func didReceiveMemoryWarning() {
